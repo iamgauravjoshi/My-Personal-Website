@@ -51,7 +51,7 @@
   <!-- ABOUT ME SECTION -->
 
   <div id="about-me" class="main greet-main">
-    <div class="greeting-main-div">
+    <div class="greeting-main-div  reveal">
                 <!-- about me text area -->
       <div class="greeting-text-div">
         <div class="greeting-profile-image">
@@ -83,16 +83,18 @@
 
     <!-- SKILLS SECTION -->
 
-    <div class="main" id="about-skills">
-      <div class="main-skills">
+    <section class="skills-section" id="about-skills">
+      <div class="main-skills reveal">
                   <!-- skills vector graphic area -->
         <div class="skills-image-div">
           <img alt="Gaurav Joshi's Skills" src="images/body-vector-graphics/skills-01.jpg" />
         </div>
                   <!-- skills text area -->
         <div class="skills-text-div">
-          <h2 class="skills-heading">Skills 🚀</h2>
-          <p class="skills-text-subtitle">CRAZY FRONTEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK 😎</p>
+          <div class="skills-heading-div">
+            <h2 class="skills-text-title">Skills 🚀</h2>
+            <p class="skills-text-subtitle">CRAZY FRONTEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK 😎</p>
+          </div>
           <div class="software-skills">
             <img target="_blank" alt="Java" src="images/logo/java.png" width="80px"/>
             <img target="_blank" alt="HTML" src="images/logo/html5.png" width="80px"/>
@@ -107,15 +109,16 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <hr>
     
 
 
     <!-- PROJECTS SECTION -->
 
-    <div class="main" id="about-projects">
-      <div class="project-main-div">
+    <section class="main" id="about-projects">
+      <div class="project-main-div reveal">
                   <!-- project header section -->
         <div class="project-header">
           <h2 class="heading project-heading">Projects 💻</h2>
@@ -234,15 +237,15 @@
           </div> -->
         </div>
       </div>
-    </div>
+    </section>
     <hr>
 
 
 
     <!-- ACHIEVEMENTS & CERTIFICATION SECTION -->
 
-    <div class="main" id="about-certification">
-      <div class="certification-main-div">
+    <section class="main" id="about-certification">
+      <div class="certification-main-div reveal">
         <div class="certification-header">
           <h2 class="heading certification-heading">Achievements And Certifications 🏆</h2>
           <p class="subtitle certification-subtitle">ACHIEVEMENTS, CERTIFICATIONS AND SOME COOL STUFF THAT I HAVE DONE !</p>
@@ -302,15 +305,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <hr>
 
 
 
     <!-- CONTACT SECTION -->
 
-    <div class="main" id="about-contact">
-      <div class="contact-main-div">
+    <section class=" " id="about-contact">
+      <div class="contact-main-div reveal">
         <div class="contact-image-div">
           <img alt="Contacts of Gaurav Joshi" src="images/body-vector-graphics/contact-us-01.jpg"/>
         </div>
@@ -333,7 +336,7 @@
         </div>
         
       </div>
-    </div>
+    </section>
   </div>
 
 
@@ -363,6 +366,44 @@
       prevScrollpos = currentScrollPos;
     }
   </script> -->
+
+
+
+
+
+
+
+          <!-- SCROLL TO TOP BUTTON -->
+  <script src="js/script.js"></script>
+  
+  <div id="progress">
+    <span id="progress-value">&#x1F815;</span>
+  </div>
+
+
+
+
+
+
+
+          <!-- PAGES SCROLL ANIMATION -->
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal(){
+      var reveals = document.querySelectorAll('.reveal');
+
+      for(var i=0; i<reveals.length; i++){
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if(revealtop < windowheight - revealpoint){
+          reveals[i].classList.add('active');
+        }
+      }
+    }
+  </script>
 </body>
 
 </html>
