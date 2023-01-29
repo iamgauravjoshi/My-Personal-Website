@@ -19,4 +19,21 @@ let calcScrollvalue = () => {
 };
 
 window.onscroll = calcScrollvalue;
-window.onload = calcScrollvalue; 
+window.onload = calcScrollvalue;
+
+
+
+
+
+
+
+
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+
+// const toggleNavbar =
+//     ()alert(message?: any): void
+//     alert("Please Subscribe");
+// };
+
+mobile_nav.addEventListener("click", () => toggleNavbar());
