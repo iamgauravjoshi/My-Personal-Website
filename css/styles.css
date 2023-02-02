@@ -69,6 +69,9 @@ hr{
 .home-section{
   min-height: 100vh;
   background-image: -webkit-linear-gradient(top, #ccf5ed, #ccf5edf0, #ccf5edb8, #e4f9f583);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
           /* navbar section */
@@ -189,23 +192,9 @@ hr{
   .active-header .mobile-navbar-btn .mobile-nav-icon:nth-child(1){
     display: none;
   }
-
-  /* .home-main-div{
-    display: none;
-  } */
 }
 
-@media (max-width: 600px){
-  .navbar-main-div{
-    padding: 8px 16px;
-  }
-  .navbar-logo-div a img{
-    width: 36px;
-  }
-  .mountain{
-    width: 100%;
-  }
-}
+
 
 
           /* Home section */
@@ -272,6 +261,33 @@ hr{
   }
 }
 
+@media (max-width: 600px){
+  .navbar-main-div{
+    padding: 8px 16px;
+  }
+  .navbar-logo-div a img{
+    width: 36px;
+  }
+  .top-cloud {
+    right: 50px;
+    top: 20px;
+  }
+      .home-title{
+        font-size: 4.25rem;
+        margin: 30px auto 0 auto;
+      }
+      .home-subtitle{
+        font-size: 2rem;
+        margin: 10px auto 10px;
+      }
+  .bottom-cloud {
+    left: 50px;
+    bottom: 200px;
+  }
+  .mountain{
+    width: 100%;
+  }
+}
 
 
 
