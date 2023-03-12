@@ -202,6 +202,7 @@ hr{
   text-align: center;
   position: relative;
   padding-top: 50px;
+  min-height: 80vh;
 }
     .top-cloud {
       position: absolute;
@@ -229,6 +230,7 @@ hr{
     }
     .mountain{
       position: relative;
+      bottom: 0px;
       /* max-width: 600px; */
       /* bottom: 10px; */
       /* padding-top: 10px; */
@@ -262,6 +264,9 @@ hr{
 }
 
 @media (max-width: 600px){
+  .home-main-div{
+    padding-top: 0px;
+  }
   .navbar-main-div{
     padding: 8px 16px;
   }
